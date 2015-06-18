@@ -1,7 +1,7 @@
 
 CudaKMean <- function(data, nCluster)
 {
-	dyn.load("lib/SimpleExample.so")
+	dyn.load("lib/RCudaKMeans.so")
 
 	# print("R CudaKMean")
 

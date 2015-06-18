@@ -1,7 +1,7 @@
 # NEED : export LD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib
 
 
-LIB_NAME = SimpleExample
+LIB_NAME = RCudaKMeans
 
 ## Platform name.
 UNAME := $(shell uname)

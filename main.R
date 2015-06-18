@@ -1,4 +1,4 @@
-source("r_source/SimpleExample.R")
+source("r_source/RCudaKMeans.R")
 
 ncol = 3
 nrow = 20000
