@@ -1,25 +1,25 @@
-\name{anRpackage-package}
-\alias{anRpackage-package}
-\alias{anRpackage}
+\name{RCudaKMeans-package}
+\alias{RCudaKMeans-package}
+\alias{RCudaKMeans}
 \docType{package}
 \title{
-\packageTitle{anRpackage}
+\packageTitle{RCudaKMeans}
 }
 \description{
-\packageDescription{anRpackage}
+\packageDescription{RCudaKMeans}
 }
 \details{
 
 The DESCRIPTION file:
-\packageDESCRIPTION{anRpackage}
-\packageIndices{anRpackage}
+\packageDESCRIPTION{RCudaKMeans}
+\packageIndices{RCudaKMeans}
 ~~ An overview of how to use the package, including the most important ~~
 ~~ functions ~~
 }
 \author{
-\packageAuthor{anRpackage}
+\packageAuthor{RCudaKMeans}
 
-Maintainer: \packageMaintainer{anRpackage}
+Maintainer: \packageMaintainer{RCudaKMeans}
 }
 \references{
 ~~ Literature or other references for background information ~~
