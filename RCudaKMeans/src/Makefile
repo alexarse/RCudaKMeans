@@ -1,6 +1,5 @@
 # NEED : export LD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib
 
-
 LIB_NAME = RCudaKMeans
 
 ## Platform name.
@@ -11,6 +10,8 @@ ARCH := $(shell getconf LONG_BIT)
 
 ## x86 vs arm.
 PROCESSOR_TYPE := $(shell uname -m)
+
+OS := $(shell uname -s)
 
 CC = clang++
 CC_FLAGS = -std=c++11 -DNDEBUG  -fPIC  -Wall -mtune=core2 -g -O2 
@@ -40,6 +41,15 @@ CU_OBJ_FILES := $(addprefix $(OBJ_DIR)/,$(notdir $(CUDA_FILES:.cu=.o)))
 
 # Source include.
 # Comming from "R RHOME" command.
+
+R_HOME_DIR := $(shell R RHOME)
+R_SRC_INCLUDE = -I$(R_HOME_DIR)/include
+
+R_LINK_INCLUDE = -L$(R_HOME_DIR)/lib
+R_LINK_FLAGS = 
+R_LINK_LIBS = 
+
+
 R_SRC_INCLUDE = -I/Library/Frameworks/R.framework/Resources/include 
 INCLUDE_SRC = -I$(INC_DIR) $(R_SRC_INCLUDE) -I/usr/local/include -I/usr/local/include/freetype2 -I/opt/X11/include
 
