@@ -72,8 +72,8 @@ double** cuda_kmeans(double**, int, int, int, double, int*, int*);
 // int     file_write(char*, int, int, int, double**, int*);
 
 
-double  wtime(void);
+//double  wtime(void);
 
-extern int _debug;
+//extern int _debug;
 
 #endif
